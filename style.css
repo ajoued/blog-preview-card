@@ -64,6 +64,7 @@ body {
     background-color: var(--yellow);
     display: inline-flex;
     width: fit-content;
+    height: fit-content;
     border-radius: 4px;
     padding: 4px 12px;
     gap: 8px;
@@ -72,21 +73,25 @@ body {
 .category p {
     font-size: 14px;
     font-weight: 800;
-    margin: 2px;
+    line-height: 150%;
+    margin: 0px;
     color: var(--Gray-950);
 }
 
 .pub-date {
     font-size: 14px;
     font-weight: 500;
-    line-height: 0;
+    line-height: 150%;
+    margin: 0;
     color: var(--Gray-950);
 }
 
 .title {
     font-size: 24px;
     font-weight: 900;
+    line-height: 150%;
     margin: 0;
+    width: 100%;
     color: var(--Gray-950);
     transition: color 0.3s;
 
@@ -100,7 +105,8 @@ body {
 .description {
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 150%;
+    width: 100%;
     color: var(--Gray-500);
     margin: 0;
 }
@@ -108,6 +114,8 @@ body {
 .author {
     display: flex;
     align-items: center;
+    width: fit-content;
+    height: fit-content;
     gap: 12px;
 }
 
@@ -117,7 +125,9 @@ body {
 }
 
 .authorname {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0;
     font-weight: 900;
 }
 
