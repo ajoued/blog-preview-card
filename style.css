@@ -1,0 +1,136 @@
+/* reusable styling variables */
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url("assets/fonts/Figtree-VariableFont_wght.ttf");
+    font-weight: 500 800;
+}
+
+@font-face {
+    font-family: "Figtree-Italic";
+    src: url("assets/fonts/Figtree-VariableFont_wght.ttf");
+    font-weight: 500 800;
+}
+
+body {
+    background-color: var(--yellow);
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 384px;
+    height: fit-content;
+    background-color: var(--White);
+    padding: 24px;
+    gap: 24px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 8px 8px 0px 0px black;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 12px;
+}
+
+.category {
+    background-color: var(--yellow);
+    display: inline-flex;
+    width: fit-content;
+    border-radius: 4px;
+    padding: 4px 12px;
+    gap: 8px;
+}
+
+.category p {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 2px;
+    color: var(--Gray-950);
+}
+
+.pub-date {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 0;
+    color: var(--Gray-950);
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 900;
+    margin: 0;
+    color: var(--Gray-950);
+    transition: color 0.3s;
+
+}
+
+.title:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--Gray-500);
+    margin: 0;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.author img {
+    width: 34px;
+}
+
+.authorname {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    position: fixed;
+    bottom: 5px;
+    width: 100%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    font-family: "Figtree";
+}
