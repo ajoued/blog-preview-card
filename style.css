@@ -33,7 +33,7 @@ body {
 .card {
     display: flex;
     flex-direction: column;
-    width: 384px;
+    width: 336px;
     height: fit-content;
     background-color: var(--White);
     padding: 24px;
@@ -41,9 +41,11 @@ body {
     border: 1px solid black;
     border-radius: 15px;
     box-shadow: 8px 8px 0px 0px black;
+    overflow: hidden;
 }
 
 .card img {
+    height: 200px;
     width: 100%;
     display: block;
     border-radius: 15px;
@@ -68,21 +70,21 @@ body {
 }
 
 .category p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 800;
     margin: 2px;
     color: var(--Gray-950);
 }
 
 .pub-date {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 0;
     color: var(--Gray-950);
 }
 
 .title {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 900;
     margin: 0;
     color: var(--Gray-950);
@@ -96,7 +98,7 @@ body {
 }
 
 .description {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     color: var(--Gray-500);
@@ -111,6 +113,7 @@ body {
 
 .author img {
     width: 34px;
+    height: auto;
 }
 
 .authorname {
